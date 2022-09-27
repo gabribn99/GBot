@@ -1,4 +1,4 @@
-# Hoemar
+# GBot
 
 Se trata de un bot para discord creado en Python 3, cuya finalidad es experimentar qué se puede hacer con un bot. (Sus funciones irán cambiando constantemente)
 
