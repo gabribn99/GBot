@@ -2,6 +2,10 @@
 
 Se trata de un bot para discord creado en Python 3, cuya finalidad es experimentar qué se puede hacer con un bot. (Sus funciones irán cambiando constantemente)
 
+# Agregar
+
+Para agregar al bot pulsa [aquí](https://discord.com/api/oauth2/authorize?client_id=1024310824308854854&permissions=8&scope=bot)
+
 # Comandos
 
 ```discord
