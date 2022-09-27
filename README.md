@@ -26,5 +26,5 @@ Realiza la suma de x + y
 
 # Ejemplos
 
-![image](https://user-images.githubusercontent.com/56097204/192606608-b91dae9e-b4e3-4e6f-a640-3828e0a74bf3.png)
+![image](https://user-images.githubusercontent.com/56097204/192610935-7d709f00-3ac8-4441-8a2c-7e637bf0acca.png)
 
