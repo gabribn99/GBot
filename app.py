@@ -28,7 +28,7 @@ async def help(ctx):
 
 @bot.command(name="saluda")
 async def SendMessage(ctx):
-    await ctx.send('¡Hola!, soy Bad Def, y estoy aquí para ayudarte.')
+    await ctx.send('¡Hola! Soy Hoemar, y estoy aquí para ayudarte.')
 
 
 @bot.command(name='perro')
