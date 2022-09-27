@@ -12,6 +12,20 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='defcon ', intents=intents)
 
 
+@bot.cammand(name='ayuda')
+async def help(ctx):
+    await ctx.send(
+        '```'
+        '    Los comandos se realizan con la extension: defcon'
+        '_____________________________________________________________'
+        'saluda            >>    Realiza un saludo'
+        'perro             >>    Envía una foto de un perro'
+        'perrocomiendo     >>    Envía un gif de un perro comiendo'
+        'perrojugando      >>    Envía un gif de un perro jugando'
+        'perrodurmiendo    >>    Envía un gif de un perro durmiendo'
+        '_____________________________________________________________```')
+
+
 @bot.command(name="saluda")
 async def SendMessage(ctx):
     await ctx.send('¡Hola!, soy Bad Def, y estoy aquí para ayudarte.')
