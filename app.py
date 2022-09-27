@@ -12,7 +12,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='defcon ', intents=intents)
 
 
-@bot.cammand(name='ayuda')
+@bot.command(name='ayuda')
 async def help(ctx):
     await ctx.send(
         '```'
