@@ -43,6 +43,12 @@ async def Gifs(ctx):
     await ctx.send(random.choice(links[ctx.invoked_with]))
 
 
+@bot.command(name='suma')
+async def Sumar(ctx, a, b):
+    result = int(a) + int(b)
+    await ctx.send(f'El resultado de la suma {a} + {b} es: {result}')
+
+
 @bot.event
 async def on_ready():
     print(f"Logged in as: {bot.user.name}")
