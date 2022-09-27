@@ -9,14 +9,14 @@ links = json.load(open("gifs.json"))
 
 intents = Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix='defcon ', intents=intents)
+bot = commands.Bot(command_prefix='--', intents=intents)
 
 
 @bot.command(name='ayuda')
 async def help(ctx):
     await ctx.send(
         '```'
-        '    Los comandos se realizan con la extension: defcon\n'
+        '    Los comandos se realizan con la extension: --\n'
         '_____________________________________________________________\n'
         'saluda            >>    Realiza un saludo\n'
         'perro             >>    Envía una foto de un perro\n'
