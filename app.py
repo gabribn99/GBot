@@ -23,6 +23,7 @@ async def help(ctx):
         'perrocomiendo     >>    Envía un gif de un perro comiendo\n'
         'perrojugando      >>    Envía un gif de un perro jugando\n'
         'perrodurmiendo    >>    Envía un gif de un perro durmiendo\n'
+        'suma x y          >>    realiza la suma de dos valores\n'
         '_____________________________________________________________```')
 
 
