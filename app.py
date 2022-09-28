@@ -44,10 +44,20 @@ async def Gifs(ctx):
     await ctx.send(random.choice(links[ctx.invoked_with]))
 
 
-@bot.command(name='suma')
-async def Sumar(ctx, a, b):
-    result = int(a) + int(b)
-    await ctx.send(f'El resultado de la suma {a} + {b} es: {result}')
+@bot.command(name='operar', aliases=["suma", "resta", "doble"])
+async def Sumar(ctx, operation):
+    command = ctx.invoked_with
+    result = 0
+    if command == 'suma':
+        for ciphre in operation.split('+'):
+            result = result + ciphre
+    if command == 'resta':
+        for ciphre in operation.split('-'):
+            result = result - ciphre
+    if command == 'doble':
+        result = ciphre * 2
+
+    await(f'El resultado es {result}')
 
 
 @bot.event
