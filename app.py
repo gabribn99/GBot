@@ -52,12 +52,12 @@ async def Sumar(ctx, operation):
         for ciphre in operation.split('+'):
             result = result + ciphre
     if command == 'resta':
-        for ciphre in operation.split('-'):
+        for ciphre in operation.split('-'): 
             result = result - ciphre
     if command == 'doble':
         result = ciphre * 2
 
-    await(f'El resultado es {result}')
+    await ctx.send(f'El resultado es {result}')
 
 
 @bot.event
