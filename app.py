@@ -44,9 +44,12 @@ async def Gifs(ctx):
     await ctx.send(random.choice(links[ctx.invoked_with]))
 
 
-@bot.command(name='operar', aliases=["suma", "resta", "doble"])
+@bot.command(name='suma')
 async def Sumar(ctx, operation):
-    command = ctx.invoked_with
+    result = operar('suma',operation)
+    await ctx.send(result)
+    
+def operar(command, operation):
     result = 0
     if command == 'suma':
         for ciphre in operation.split('+'):
@@ -56,9 +59,8 @@ async def Sumar(ctx, operation):
             result = result - ciphre
     if command == 'doble':
         result = ciphre * 2
-
-    await ctx.send(f'El resultado es {result}')
-
+    
+    return result
 
 @bot.event
 async def on_ready():
