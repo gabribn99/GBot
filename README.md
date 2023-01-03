@@ -1,6 +1,7 @@
 # GBot
 
 Se trata de un bot para discord creado en Python 3, cuya finalidad es experimentar qué se puede hacer con un bot. (Sus funciones irán cambiando constantemente)
+Este bot utiliza la librería de nextcord y la api de 
 
 # Agregar
 
